@@ -1,0 +1,21 @@
+<section class="hotels">
+    <div class="container">
+        <div class="grid">
+            <div class="grid-item fearured-hotels">
+                <img src="{{hotel.DefaultPicture}}" alt="" class="hotel-image">
+                <h5 class="hotel-name">{{hotel.HotelName}}</h5>
+                <span class="hotel-price">From {{hotel.PriceMin}}/Night</span>
+                <div class="hotel-rating">
+                    <i class="fas fa-star rating"></i>
+                    <i class="fas fa-star rating"></i>
+                    <i class="fas fa-star rating"></i>
+                    <i class="fas fa-star rating"></i>
+                    <i class="fas fa-star-half rating"></i>
+                </div>
+                <a (click)="onSelect(hotel)" class="btn btn-gradient">Book Now
+                    <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

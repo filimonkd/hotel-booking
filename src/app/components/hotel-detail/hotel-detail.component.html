@@ -1,0 +1,21 @@
+<section class="rooms">
+    <div class="container">
+        <h5 class="section-head">
+            <span class="heading">Rooms</span>
+            <span class="sub-heading">{{hotelDetail?.HotelName}}</span>
+        </h5>
+        <div class="grid rooms-grid shift">
+            <div class="grid-item featured-rooms" *ngFor = "let r of room" [r]="r">
+                <div class="image-wrap">
+                    <img class="room-image" src="{{r.DefaultPicture}}" alt="">
+                    <h5 class="room-name">{{hotelDetail?.HotelName}}</h5>
+                </div>
+                <div class="room-info-wrap">
+                    <span class="room-price">{{r.Price}} <span class="per-night">per night</span></span>
+                    <p class="paragraph">{{r.Name}}</p>
+                    <a href="#" class="btn rooms-btn">book Now<span class="dots"><i class="fas fa-ellipsis-h"></i></span>></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
